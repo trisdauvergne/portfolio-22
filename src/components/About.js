@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
     return (
         <section>
-            <h1>About section</h1>
+            <h1 className="test">About section</h1>
         </section>
     )
 };
