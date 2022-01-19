@@ -9,6 +9,9 @@ import Layout from "../components/Layout"
 
 
 export default function Home() {
+  // console.log('Space ID:', process.env.GATSBY_CONTENTFUL_SPACE_ID);
+  // console.log('Access token:', process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN);
+
   return (
     <>
     <Layout>

@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
-const Projects = () => {
+const Projects = ({ data }) => {
+    const projects = data.allContentfulProject.edges;
+    console.log('all', projects);
     return (
         <section>
             <h1>Projects section</h1>
@@ -8,4 +11,49 @@ const Projects = () => {
     )
 };
 
-export default Projects;
+export const ProjectsData = () => {
+
+    return (
+        <StaticQuery query={graphql`
+            query MyQuery {
+                allContentfulProject {
+                    edges {
+                        node {
+                            projectTitle
+                            projectIntro
+                            projectBody {
+                                projectBody
+                            }
+                            projectCreative {
+                                projectCreative
+                            }
+                            deployedLink
+                            sourceCode
+                            toolsAndLanguages
+                            mainPagePreview {
+                                title
+                                description
+                                file {
+                                contentType
+                                fileName
+                                url
+                                details {
+                                    size
+                                    image {
+                                    height
+                                    width
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    `}
+    render={data => <Projects data={data} />}
+/>
+    )
+};
+
+export default ProjectsData;
