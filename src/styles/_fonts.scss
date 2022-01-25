@@ -1,0 +1,18 @@
+$header-font: "Chivo", sans-serif;
+$body-font: "Almarai", sans-serif;
+
+@mixin header-text-style {
+  font-family: $header-font;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin subheading-text-style {
+  font-family: $header-font;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin body-text-style {
+  font-family: $body-font;
+}

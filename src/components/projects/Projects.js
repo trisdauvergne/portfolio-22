@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import './projects.scss';
+import Project from '../project/Project';
 
 const Projects = ({ data }) => {
     const projects = data.allContentfulProject.edges;
@@ -9,7 +10,8 @@ const Projects = ({ data }) => {
         <section className="projects">
             <h1>Projects section</h1>
             {projects.map((project, i) => (
-                <p key={i}>{project.node.projectTitle}</p>
+                // <p key={i}>{project.node.projectTitle}</p>
+                <Project key={i} project={project.node} />
             ))}
         </section>
     )

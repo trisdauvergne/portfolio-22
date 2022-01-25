@@ -1,4 +1,4 @@
-@import "./spacing", "./colors";
+@import "./spacing", "./colors", "./fonts";
 
 * {
   margin: 0;
@@ -6,10 +6,22 @@
   box-sizing: border-box;
 }
 
+body {
+  color: $nearly-black;
+}
+
 section {
-  height: $max-height;
+  @include section-style;
 }
 
 h1 {
-  font-family: "Chivo", sans-serif;
+  @include header-text-style;
+}
+
+h2 {
+  @include subheading-text-style;
+}
+
+p {
+  @include body-text-style;
 }

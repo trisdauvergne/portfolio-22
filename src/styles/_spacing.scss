@@ -1,1 +1,7 @@
-$max-height: 100vh;
+$vertical-gap: 3rem;
+$horizontal-gap: 1rem;
+
+@mixin section-style {
+  height: 100vh;
+  padding: $vertical-gap $horizontal-gap;
+}
