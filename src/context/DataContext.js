@@ -1,5 +1,5 @@
 import React, { createContext } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+// import { StaticQuery, graphql } from 'gatsby';
 
 export const DataContext = createContext();
 

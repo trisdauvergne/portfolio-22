@@ -1,5 +1,5 @@
 import React from "react"
-import About from "../components/About"
+import About from "../components/about/About"
 import Projects from "../components/Projects"
 import Cv from "../components/Cv"
 import Intro from "../components/Intro"
