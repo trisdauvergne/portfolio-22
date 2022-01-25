@@ -7,6 +7,9 @@ const Projects = ({ data }) => {
     return (
         <section>
             <h1>Projects section</h1>
+            {projects.map((project, i) => (
+                <p key={i}>{project.node.projectTitle}</p>
+            ))}
         </section>
     )
 };
