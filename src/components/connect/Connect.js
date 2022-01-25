@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './connect.scss';
 
 const Connect = () => {
     return (
-        <section>
+        <section className="connect">
             <h1>Connect section</h1>
         </section>
     )

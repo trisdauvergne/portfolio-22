@@ -1,11 +1,12 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import './projects.scss';
 
 const Projects = ({ data }) => {
     const projects = data.allContentfulProject.edges;
     console.log('all', projects);
     return (
-        <section>
+        <section className="projects">
             <h1>Projects section</h1>
             {projects.map((project, i) => (
                 <p key={i}>{project.node.projectTitle}</p>

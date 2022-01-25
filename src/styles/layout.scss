@@ -1,3 +1,5 @@
+@import "./spacing", "./colors";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,7 @@
 }
 
 section {
-  border: 1px dashed red;
-  height: 100vh;
+  height: $max-height;
 }
 
 h1 {
