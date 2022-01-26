@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { DataContext } from '../../context/DataContext';
+import { StateContext } from '../../context/StateContext';
 import './intro.scss';
 
 const Intro = () => {
-    const data = useContext(DataContext);
+    const data = useContext(StateContext);
     console.log('context', data);
     return (
         <section className="intro">

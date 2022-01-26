@@ -44,19 +44,6 @@ const Project = ({ project }) => {
                     {project.toolsAndLanguages.map((tool, i) => <p key={i}>{tool}</p>)}
                 </div>}
             </div>
-            {/* <div className="project__copy">
-                <p><strong>Read more +</strong></p>
-                <p>{project.projectBody.projectBody}</p>
-                <p>{project.projectCreative.projectCreative}</p>
-            </div>
-            <div className="project__tools">
-                <p><strong>Tools & languages +</strong></p>
-                {project.toolsAndLanguages.map((tool, i) => <p key={i}>{tool}</p>)}
-            </div>
-            <div className="project__links">
-                <p>{project.deployedLink}</p>
-                <p>{project.sourceCode}</p>
-            </div> */}
         </div>
     )
 }

@@ -1,5 +1,16 @@
-@import "../../styles/colors";
+@import "../../styles/colors", "../../styles/spacing";
 
 .cv {
   background-color: $pinker;
+}
+
+.cv article {
+  display: grid;
+  grid-template-columns: 20% 55%;
+  // column-gap: $vertical-gap;
+}
+
+.cv__btns {
+  display: flex;
+  flex-direction: column;
 }
