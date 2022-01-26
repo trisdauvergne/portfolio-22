@@ -15,4 +15,5 @@ $body-font: "Almarai", sans-serif;
 
 @mixin body-text-style {
   font-family: $body-font;
+  font-size: 16px;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import OutsideClickHandler from 'react-outside-click-handler';
 import './project.scss';
 
 const Project = ({ project }) => {
@@ -16,19 +17,26 @@ const Project = ({ project }) => {
         setVisibleTools(!visibleTools);
         setVisibleBody(false);
     };
-    
+
+    const hideAll = () => {
+        setVisibleTools(false);
+        setVisibleBody(false);
+    }
+
     return (
         <div className="project">
             <div className="project__title">
                 <h2>{project.projectTitle}</h2>
                 <p>{project.projectIntro}</p>
             </div>
+            <OutsideClickHandler onOutsideClick={hideAll}>
             <div className="project__btns">
-                <button onClick={changeBodyVisibility}>Read more +</button>
+                <button onClick={changeBodyVisibility}>{visibleBody ? `Hide -` : `Read more +`}</button>
                 <button onClick={changeToolsVisibility}>Tools & Languages +</button>
-                <p>{project.deployedLink}</p>
-                <p>{project.sourceCode}</p>
+                <a href={project.deployedLink} target="_blank" rel="noreferrer" onClick={hideAll}>Deployed project</a>
+                <a href={project.sourceCode} target="_blank" rel="noreferrer" onClick={hideAll}>Source code</a>
             </div>
+            </OutsideClickHandler>
             <div className="project__info">
                 {visibleBody && <div>
                     <p>{project.projectBody.projectBody}</p>

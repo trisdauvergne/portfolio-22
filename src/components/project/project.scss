@@ -1,9 +1,20 @@
 @import "../../styles/spacing";
 
 .project {
+  max-width: 1024px;
   display: grid;
   grid-template-columns: 20% 25% 45%;
   grid-template-rows: auto;
+  column-gap: 1rem;
   border: 1px dashed black;
   margin-bottom: $vertical-gap;
+}
+
+.project__btns {
+  display: grid;
+  grid-template-rows: repeat(4, 30px);
+}
+
+.project__btns a {
+  line-height: 30px;
 }

@@ -25,3 +25,21 @@ h2 {
 p {
   @include body-text-style;
 }
+
+a {
+  @include body-text-style;
+  text-decoration: none;
+  color: $nearly-black;
+}
+
+button {
+  @include body-text-style;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+
+a:hover,
+button:hover {
+  font-weight: 600;
+}
