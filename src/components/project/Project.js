@@ -6,8 +6,6 @@ const Project = ({ project }) => {
     const [ visibleBody, setVisibleBody ] = useState(false);
     const [ visibleTools, setVisibleTools ] = useState(false);
 
-    console.log('single file', project)
-
     const changeBodyVisibility = () => {
         setVisibleBody(!visibleBody);
         setVisibleTools(false);
