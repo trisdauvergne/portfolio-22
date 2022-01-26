@@ -1,0 +1,8 @@
+@import "../../styles/spacing";
+
+.project {
+  display: grid;
+  grid-template-rows: [title]25% [everything-else]auto;
+  border: 1px dashed black;
+  margin-bottom: $vertical-gap;
+}

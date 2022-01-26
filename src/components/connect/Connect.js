@@ -4,7 +4,7 @@ import './connect.scss';
 const Connect = () => {
     return (
         <section className="connect">
-            <h1>Connect section</h1>
+            <h1>Connect.</h1>
         </section>
     )
 }

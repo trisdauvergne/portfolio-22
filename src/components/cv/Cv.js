@@ -4,7 +4,7 @@ import './cv.scss';
 const CV = () => {
     return (
         <section className="cv">
-            <h1>CV section</h1>
+            <h1>CV.</h1>
         </section>
     )
 }
