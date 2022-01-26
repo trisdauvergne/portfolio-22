@@ -2,7 +2,8 @@
 
 .project {
   display: grid;
-  grid-template-rows: [title]25% [everything-else]auto;
+  grid-template-columns: 17% 37% 17% 17%;
+  grid-template-rows: auto;
   border: 1px dashed black;
   margin-bottom: $vertical-gap;
 }
