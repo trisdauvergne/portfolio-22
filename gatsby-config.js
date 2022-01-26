@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Chivo:300,400,700`, `Almarai:300,400,700,800`],
+        fonts: [`Chivo:300,400,700`, `Almarai:300,400,700,800`, `material icons`],
         display: 'swap',
       },
     },
