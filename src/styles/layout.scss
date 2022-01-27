@@ -14,12 +14,16 @@ section {
   @include section-style;
 }
 
-h1 {
+.section-heading {
   @include header-text-style;
 }
 
 h2 {
   @include subheading-text-style;
+}
+
+.clickable-heading {
+  @include clickable-header;
 }
 
 p {
@@ -41,5 +45,5 @@ button {
 
 a:hover,
 button:hover {
-  font-weight: 600;
+  font-weight: 400;
 }

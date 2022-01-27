@@ -1,5 +1,15 @@
-@import "../../styles/colors";
+@import "../../styles/colors", "../../styles/fonts";
 
 .connect {
   background-color: $pinkest;
+}
+
+.connect-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-btns a {
+  @include subheading-text-style;
+  font-size: 3.5rem;
 }

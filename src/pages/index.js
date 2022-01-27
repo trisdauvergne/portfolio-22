@@ -6,19 +6,22 @@ import Intro from "../components/intro/Intro"
 import Nav from "../components/Nav"
 import Connect from "../components/connect/Connect"
 import Layout from "../components/Layout"
-import {StateProvider } from '../context/StateContext';
+import { StateProvider } from '../context/StateContext';
+import { ProjectProvider } from "../context/ProjectContext"
 
 const Home = () => {
   return (
     <StateProvider>
-      <Layout>
-        <Intro />
-        <Nav />
-        <About />
-        <Projects />
-        <Cv />
-        <Connect />
-      </Layout>
+      <ProjectProvider>
+        <Layout>
+          <Intro />
+          <Nav />
+          <About />
+          <Projects />
+          <Cv />
+          <Connect />
+        </Layout>
+      </ProjectProvider>
     </StateProvider>
   )
 };

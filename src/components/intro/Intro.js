@@ -10,6 +10,6 @@ const Intro = () => {
             <h1>TRISTAN DAUVERGNE</h1>
         </section>
     )
-}
+};
 
-export default Intro
+export default Intro;

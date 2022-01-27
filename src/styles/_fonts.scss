@@ -1,10 +1,14 @@
+@import "../styles/spacing";
+
 $header-font: "Chivo", sans-serif;
 $body-font: "Almarai", sans-serif;
 
 @mixin header-text-style {
   font-family: $header-font;
-  font-weight: 400;
+  font-size: 6rem;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: $vertical-gap;
 }
 
 @mixin subheading-text-style {
@@ -13,7 +17,12 @@ $body-font: "Almarai", sans-serif;
   text-transform: uppercase;
 }
 
+@mixin clickable-header {
+  @include subheading-text-style;
+  font-size: 2rem;
+}
+
 @mixin body-text-style {
   font-family: $body-font;
-  font-size: 16px;
+  font-size: 1rem;
 }

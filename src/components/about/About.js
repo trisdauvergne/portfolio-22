@@ -4,7 +4,7 @@ import './about.scss';
 const About = () => {
     return (
         <section className="about">
-            <h1 className="test">About me.</h1>
+            <h1 className="section-heading">About me.</h1>
             <div>
                 <p>I'm a former design project manager from London, now turned developer living in Stockholm.</p>
                 <p>I am interested in all aspects of design (especially good UX and UI), passionate about music, and an appreciator of food (of course).</p>

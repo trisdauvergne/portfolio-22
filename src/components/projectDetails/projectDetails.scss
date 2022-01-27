@@ -1,0 +1,18 @@
+@import "../../styles/spacing";
+
+.project {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 1rem;
+}
+
+.project-intro > h2,
+.project-intro > p,
+.project-details > div > p {
+  margin-bottom: $small-vertical-gap;
+}
+
+.project-btns {
+  display: flex;
+  flex-direction: column;
+}

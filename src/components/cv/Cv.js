@@ -33,13 +33,13 @@ const CV = () => {
 
     return (
         <section className="cv">
-            <h1>CV.</h1>
+            <h1 className="section-heading">CV.</h1>
             <OutsideClickHandler onOutsideClick={hideAll}>
             <article>
                 <div className="cv__btns">
-                    <button onClick={changeEducationVisibility}>Education & Training +</button>
-                    <button onClick={changeWorkExperienceVisibility}>Work Experience +</button>
-                    <button onClick={changeTechnicalSkillsVisibility}>Technical Skills +</button>
+                    <button className="clickable-heading" onClick={changeEducationVisibility}>{visibleEducation ? `Hide -` : `Education & Training +`}</button>
+                    <button className="clickable-heading" onClick={changeWorkExperienceVisibility}>{visibleWorkExperience ? `Hide -` : `Work Experience +`}</button>
+                    <button className="clickable-heading" onClick={changeTechnicalSkillsVisibility}>{visibleTechnicalSkills ? `Hide -` : `Technical Skills +`}</button>
                 </div>
                 <div>
                     {visibleEducation &&

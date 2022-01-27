@@ -4,3 +4,13 @@
   background-color: $pinkcream;
   overflow: hidden;
 }
+
+.projects-info-container {
+  display: grid;
+  grid-template-columns: 25% 70%;
+}
+
+.projects-info__names {
+  display: flex;
+  flex-direction: column;
+}
