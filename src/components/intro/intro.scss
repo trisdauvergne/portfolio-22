@@ -1,5 +1,11 @@
-@import "../../styles/colors";
+@import "../../styles/colors", "../../styles/fonts";
 
 .intro {
   background-color: $creamiest;
+}
+
+.intro > h1 {
+  font-family: $header-font;
+  font-weight: 400;
+  font-size: 10rem;
 }
