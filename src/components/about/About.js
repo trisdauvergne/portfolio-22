@@ -13,7 +13,7 @@ const About = () => {
                 <p>Working as a developer allows me to create meaningful online experiences and respond to problems with creative solutions.</p>
             </div>
             <Link to="projects" smooth={true} duration={1000}>
-                <button>To projects</button>
+                <button className="nav-btn">To projects</button>
             </Link>
         </section>
     )

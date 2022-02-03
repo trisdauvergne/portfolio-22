@@ -105,7 +105,7 @@ const CV = () => {
                 </article>
             </OutsideClickHandler>
             <Link to="connect" smooth={true} duration={1000}>
-                <button>To Connect</button>
+                <button className="nav-btn">To Connect</button>
             </Link>
         </section>
     )

@@ -39,7 +39,7 @@ const Projects = ({ data }) => {
                     </div>
             </OutsideClickHandler>
             <Link to="cv" smooth={true} duration={1000}>
-                <button>To CV</button>
+                <button className="nav-btn">To CV</button>
             </Link>
         </section>
         

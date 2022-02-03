@@ -12,7 +12,7 @@ const Connect = () => {
                 <a href="mailto:tristan.dauvergne@gmail.com" target="_blank" rel="noreferrer">Email<span className="material-icons lrg-icon">arrow_right_alt</span></a>
             </div>
             <Link to="about" smooth={true} duration={1000}>
-                <button>Back to top</button>
+                <button className="nav-btn">Back to top</button>
             </Link>
         </section>
     )

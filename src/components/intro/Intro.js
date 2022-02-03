@@ -7,7 +7,7 @@ const Intro = () => {
         <section className="intro">
             <h1>TRISTAN DAUVERGNE</h1>
             <Link to="about" smooth={true} duration={1000}>
-                <button>Scroll down</button>
+                <button className="nav-btn">Scroll down</button>
             </Link>
         </section>
     )

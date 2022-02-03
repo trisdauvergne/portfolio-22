@@ -43,6 +43,19 @@ button {
   text-align: left;
 }
 
+.nav-btn {
+  position: absolute;
+  bottom: $big-vertical-gap;
+  border: 1px solid $nearly-black;
+  padding: $small-vertical-gap;
+  font-size: 1.5rem;
+  @include subheading-text-style;
+}
+
+.lrg-icon {
+  font-size: 2.5rem;
+}
+
 a:hover,
 button:hover {
   font-weight: 400;

@@ -1,9 +1,10 @@
-$vertical-gap: 3rem;
+$big-vertical-gap: 4rem;
 $small-vertical-gap: 1rem;
 $big-horizontal-gap: 4rem;
 $small-horizontal-gap: 1rem;
 
 @mixin section-style {
   height: 100vh;
-  padding: $vertical-gap 0 0 $big-horizontal-gap;
+  padding: $big-vertical-gap 0 0 $big-horizontal-gap;
+  position: relative;
 }
