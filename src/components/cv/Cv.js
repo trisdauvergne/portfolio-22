@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import OutsideClickHandler from 'react-outside-click-handler';
 import './cv.scss';
 
@@ -32,7 +33,7 @@ const CV = () => {
     }
 
     return (
-        <section className="cv">
+        <section className="cv" id="cv">
             <h1 className="section-heading">CV.</h1>
             <OutsideClickHandler onOutsideClick={hideAll}>
                 <article>
@@ -103,6 +104,9 @@ const CV = () => {
                     </div>
                 </article>
             </OutsideClickHandler>
+            <Link to="connect" smooth={true} duration={1000}>
+                <button>To Connect</button>
+            </Link>
         </section>
     )
 }

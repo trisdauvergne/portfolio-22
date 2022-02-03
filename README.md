@@ -7,3 +7,5 @@ Created using Gatsby starter **[npx gatsby new gatsby-starter-hello-world](https
 [Gatsby Plugin Google Fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-fonts/)
 
 [Gatsby Plugin Sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
+
+npm i gatsby-plugin-anchor-links
