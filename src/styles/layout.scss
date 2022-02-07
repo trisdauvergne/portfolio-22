@@ -26,6 +26,10 @@ h2 {
   @include clickable-header;
 }
 
+.clickable-heading:focus {
+  font-weight: 400;
+}
+
 p {
   @include body-text-style;
 }
