@@ -1,42 +1,43 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-scroll';
 import OutsideClickHandler from 'react-outside-click-handler';
-import './projects.scss';
 import ProjectDetails from '../projectDetails/ProjectDetails';
-import { ProjectContext } from '../../context/ProjectContext'; 
+import { updateProject } from '../../redux/project';
+import './projects.scss';
 
 const Projects = ({ data }) => {
     const [ projectInfoVisibility, setProjectInfoVisibility ] = useState(false);
-
-    const { saveProjectInfo, projectDetails } = useContext(ProjectContext);
-
+    
     const projects = data.allContentfulProject.edges;
+    
+    const dispatch = useDispatch();
 
     const setProject = (project) => {
         setProjectInfoVisibility(false);
-        saveProjectInfo(project);
+        dispatch(updateProject({...project}));
         setProjectInfoVisibility(true);
-    }
- 
+    };
+
     return (
         <section className="projects" id="projects">
             <OutsideClickHandler onOutsideClick={() => setProjectInfoVisibility(false)}>
-                    <h1 className="section-heading">Deployed projects.</h1>
-                    <div className="projects-info-container">
-                            <div className="projects-info__names">
-                                {projects.map((project, i) => (
-                                    <button
-                                        onClick={() => setProject(project.node)}
-                                        className="clickable-heading"
-                                        key={i}>{project.node.projectTitle}
-                                    </button>))
-                                }
-                            </div>
-                        <div className="projects-info__details">
-                            {projectInfoVisibility && <ProjectDetails project={projectDetails}/>}
+                <h1 className="section-heading">Deployed projects.</h1>
+                <div className="projects-info-container">
+                        <div className="projects-info__names">
+                            {projects.map((project, i) => (
+                                <button
+                                    onClick={() => setProject(project.node)}
+                                    className="clickable-heading"
+                                    key={i}>{project.node.projectTitle}
+                                </button>))
+                            }
                         </div>
+                    <div className="projects-info__details">
+                        {projectInfoVisibility && <ProjectDetails />}
                     </div>
+                </div>
             </OutsideClickHandler>
             <Link to="cv" smooth={true} duration={1000}>
                 <button className="nav-btn">To CV</button>
