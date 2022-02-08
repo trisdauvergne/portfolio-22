@@ -1,8 +1,28 @@
+@import "../../styles/spacing", "../../styles/fonts";
+
 .nav {
   height: 100vh;
+  width: 10vw;
+  z-index: 2;
   position: fixed;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  padding: $big-vertical-gap 0 0 $small-vertical-gap;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1rem);
+  padding-top: 1.4rem;
+}
+
+.nav-container > a > button {
+  font-family: $header-font;
+  text-transform: uppercase;
+}
+
+.nav-container > a > button:hover {
+  font-weight: 700;
+}
+
+.nav-container > a > button:focus {
+  font-weight: 700;
 }
