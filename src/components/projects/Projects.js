@@ -9,7 +9,6 @@ import './projects.scss';
 
 const Projects = ({ data }) => {
     const [ projectInfoVisibility, setProjectInfoVisibility ] = useState(false);
-    const [ headingClicked, setHeadingClicked ] = useState(false);
     
     const projects = data.allContentfulProject.edges;
     
@@ -30,7 +29,6 @@ const Projects = ({ data }) => {
                             {projects.map((project, i) => (
                                 <button
                                     onClick={() => setProject(project.node)}
-                                    // className={!headingClicked ? `clickable-heading` : `clickable-heading--clicked`}
                                     className="clickable-heading"
                                     key={i}>{project.node.projectTitle}
                                 </button>))
